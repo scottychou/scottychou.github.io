@@ -1,6 +1,6 @@
 * {
-	background-color:#72c5f7;
-	font-family:cursive;
+	background-color:#CCFFCC;
+	font-family: Century;
 	margin-left:10px;
 	margin-right:10px;
 }
@@ -38,8 +38,8 @@ a:hover {
 	font-size: 80
 }
 p {
-	margin-top: -20px;
-	margin-bottom: -20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
     background-color:none;
@@ -51,4 +51,9 @@ p {
 
 i {
 	background-color: lavender;
+}
+
+.orange {
+	
+	background-color: darkgreen;
 }
