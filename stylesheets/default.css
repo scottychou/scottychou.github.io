@@ -1,4 +1,4 @@
-* {
+body {
 	background-color:#CCFFCC;
 	font-family: Century;
 	margin-left:10px;
@@ -37,14 +37,7 @@ a:hover {
 .fl {
 	font-size: 80
 }
-p {
-	margin-top: 0px;
-	margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    background-color:none;
-    position:relative;
-}
+
 .boxed {
   border: 1px solid green ;
 } 
@@ -56,4 +49,20 @@ i {
 .orange {
 	
 	background-color: darkgreen;
+}
+
+#navbar {
+	float:right;
+	width:50%;
+}
+
+#catblog {
+	float:right;
+	width:30%;
+	padding-right:10%;
+}
+
+.leftside {
+	width:30%;
+	padding-bottom:10px;
 }
