@@ -1,4 +1,4 @@
-[scottychou.github.io](scottychou.github.io)
+[scottychou.github.io](http://scottychou.github.io)
 
 
     What did you learn about CSS padding, borders, and margin by doing this challenge?
