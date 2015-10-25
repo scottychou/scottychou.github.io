@@ -12,12 +12,6 @@ h1 {
 	text-decoration: underline;
 }
 
-p {
-	position:static;
-	margin-top:0px;
-	margin-bottom:0px;
-}
-
 IMG.displayed {
     display: block;
     margin-left: auto;
