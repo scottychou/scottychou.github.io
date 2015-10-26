@@ -15,22 +15,13 @@ a:hover {
 	color:purple;
 }
 .margin-sm {
-	margin-top: 10px;
-	margin-bottom: 10px;
-    margin-right: 0px;
-    margin-left: 0px;
+	margin: 10px 0px;
 }
 .margin-m {
-	margin-top: 20px;
-	margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
+	margin: 20px 0px;
 }
 .margin-l {
-	margin-top: 40px;
-	margin-bottom: 40px;
-    margin-right: 0px;
-    margin-left: 0px;
+	margin: 40px 0px;
 }
 .fs{
 	font-size: 0.6em;
@@ -39,7 +30,7 @@ a:hover {
 	font-size: 0.8em;
 }
 .fl {
-	font-size: 80
+	font-size: 6em;
 }
 
 .boxed {
@@ -62,24 +53,25 @@ i {
 
 #catblog {
 	float:right;
-	width:30%;
+	
 	padding-right:10%;
+	height: 30%;
+	max-width: 620px;
+    max-height: 300px;
+    width: auto;
 
 }
 
 .leftside {
+	
 	width:20%;
-	padding-bottom:10px;
+	
 	padding-left: 30px;
 	text-align: center;
 }
-.midside {
-	left:43%;
-	width:20%;
-	text-align: center;
-	float:top;
-}
+
 .rightside {
+
 	left:70%;
 	width:20%;
 	position:relative;
@@ -94,4 +86,31 @@ header {
 h1 {
 	background-color: lavender;
 	border-radius: 1em;
+}
+
+#artbotmar{
+	margin-bottom:2em;
+	height:20em;
+}
+.column-1 {
+    float: left;
+    width: 42.5%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-bottom:50px;
+    background-color:lavender;
+}
+
+.column-2 {
+    float: left;
+    width: 42.5%;
+    margin-left: 2.5%;
+    margin-right: 5%;
+    background-color:pink;
+}
+
+.ArtistPic {
+    max-width: 720px;
+    max-height: 660px;
+    width: auto;
 }
