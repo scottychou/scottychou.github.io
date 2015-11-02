@@ -1,116 +1,92 @@
 .debug {
 	border:1px solid blue;
 }
-
-body {
-	background-color:#CCFFCC;
-	font-family: Century;
-	margin-left:10px;
-	margin-right:10px;
-}
-a {
-	color:blue
-}
-a:hover {
-	color:purple;
-}
-.margin-sm {
-	margin: 10px 0px;
-}
-.margin-m {
-	margin: 20px 0px;
-}
-.margin-l {
-	margin: 40px 0px;
-}
-.fs{
-	font-size: 0.6em;
-}
-.fm{
-	font-size: 0.8em;
-}
-.fl {
-	font-size: 6em;
-}
-
-.boxed {
-  border: 1px solid green ;
-} 
-
-i {
-	background-color: lavender;
-}
-
-.orange {
-	
-	background-color: darkgreen;
-}
-
-#navbar {
-	float:right;
-	width:50%;
-}
-
-#catblog {
-	float:right;
-	
-	padding-right:10%;
-	height: 30%;
-	max-width: 620px;
-    max-height: 300px;
-    width: auto;
-
-}
-
-.leftside {
-	
-	width:20%;
-	
-	padding-left: 30px;
-	text-align: center;
-}
-
-.rightside {
-
-	left:70%;
-	width:20%;
-	position:relative;
-	float:top;
-	text-align: center;
-}
-
-header {
-	background-color: lavender;
-	border-radius: 1em;
+*{
+	font-family:courier;
 }
 h1 {
 	background-color: lavender;
 	border-radius: 1em;
 }
-
-#artbotmar{
-	margin-bottom:2em;
-	height:20em;
+#container {
+width:900px;
+margin:0 auto;
+overflow:auto;
+border:1px solid blue;
 }
-.column-1 {
-    float: left;
-    width: 42.5%;
-    margin-left: 5%;
-    margin-right: 2.5%;
-    margin-bottom:50px;
-    background-color:lavender;
+#header {
+height:90px;
+margin: 1em 0 0.5em 0;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #00caa6;
+	font-style: italic;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 58px;
+	line-height: 54px;
+	text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+#nav {
+overflow:auto;
+border:1px solid blue;
 }
 
-.column-2 {
-    float: left;
-    width: 42.5%;
-    margin-left: 2.5%;
-    margin-right: 5%;
-    background-color:pink;
+#nav ul {
+list-style:none;
+height:30px;
+padding:0px;
+margin:0px;
 }
 
-.ArtistPic {
-    max-width: 720px;
-    max-height: 660px;
-    width: auto;
+#nav ul li {
+float:left;
+margin:10px;
+display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: lavender;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+}
+#main {
+overflow:auto;
+margin-top:3px;
+border:1px solid blue;
+}
+#main_left {
+float:left;
+width:590px;
+min-height:400px;
+border:1px solid blue;
+}
+#main_right {
+float:left;
+width:300px;
+min-height:400px;
+border:1px solid blue;
+}
+#footer {
+
+height:40px;
+border:1px solid blue;
+}
+a {
+	color:blue
+}
+
+
+a:hover {
+	color:purple;
+}
+.orange {
+	
+	background-color: darkgreen;
+}
+#catpic{
+	max-width: 300px;
+	max-height:400px;
 }
