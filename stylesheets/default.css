@@ -71,6 +71,8 @@ border:1px solid blue;
 }
 #footer {
 
+	padding:3em;
+text-align: center;
 height:40px;
 border:1px solid blue;
 }
@@ -82,10 +84,7 @@ a {
 a:hover {
 	color:purple;
 }
-.orange {
-	
-	background-color: darkgreen;
-}
+
 #catpic{
 	max-width: 300px;
 	max-height:400px;
