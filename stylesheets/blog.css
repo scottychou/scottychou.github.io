@@ -1,19 +1,391 @@
-* {
-	
-	font-family: Garamond;
+/*
+---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- RESETS
+---------------------------------------------------------------------------------------------
+*/
+
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+	font-weight:normal;
 }
 
-nav {
-	margin-top:50px;
-	margin-left:20px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight:normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 
-h1 {
-	text-decoration: underline;
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
 }
 
-IMG.displayed {
-    display: block;
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	margin:0;
+	padding:0;
+	border:0;
+	white-space:normal;
+	display:block;
+}
+strong{ font-weight:bold; }
+p{ margin-bottom:20px;}
+
+hr{
+	border-left:none;
+	border-top:none;
+	border-right:none;
+	border-bottom:1px solid #3b3d42;
+	height: 1px;
+	margin:5px auto 20px auto;
+	display:block;
+	width:95%;
+}
+
+small{ font-size: 10px; }
+
+/*
+---------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- HACKS
+---------------------------------------------------------------------------------------------
+*/
+
+input,
+textarea {
+    font: 12px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#d8d8d8;
+}
+
+.hidden { display: none; }
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
+    display: block;
+    clear: both;
 }
+img.alignleft { float: left; margin-right:10px; }
+img.alignright { float: right; margin-left:10px; }
+img.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+.left{text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
+
+
+	.wp-caption{}
+	.wp-caption-text{}
+	.gallery-caption{}
+	.alignright{ text-align:right;}
+	.alignleft{ text-align:left;}
+	.aligncenter{ text-align:center;}
+	.alignRight{ text-align:right;}
+	.alignLeft{ text-align:left;}
+	.alignCenter{ text-align:center;}
+	.right{ text-align:right;}
+	.left{ text-align:left;}
+	.center{ text-align:center;}
+	.sticky{}
+	.bypostauthor{}
+	.wp-smiley{ display:inline;}
+	
+	
+a, a:hover, a:visited, a:active{text-decoration:none;}
+a{
+	color:#fff;
+	/* CSS TRANSITION */
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-timing-function: linear;
+	/* CSS TRANSITION - Mozilla hack */
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: linear;
+}
+
+.clear{
+	clear:both;
+	height:0px;
+	}
+
+.inv{ display:none; }
+
+a img { border: none; }
+
+body{
+	background:#0c0e10;
+	color:#d8d8d8;
+	font: 12px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	margin:0;
+}
+
+
+/*
+---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ HEADINGS
+---------------------------------------------------------------------------------------------
+*/
+
+h1, h2, h3, h4, h5, h6{ line-height:normal; font-weight:normal; margin-bottom:10px;}
+
+	h1{	font-size:48px;}
+	h2{	font-size:36px;}
+	h3{	font-size:24px;}
+	h4{	font-size:18px;}
+	h5{	font-size:14px;}
+	h6{	font-size:13px;}
+
+
+/*
+---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ HEADER
+---------------------------------------------------------------------------------------------
+*/
+
+#header{
+	border-bottom: 5px solid #27292e;
+	position:relative;
+}
+#header .content{
+	margin:0 auto;
+	width:960px;
+	height:80px;
+	z-index:1003;
+	position:relative;
+}
+
+/*
+-------------------------- { Logo }
+*/
+#logo{
+	display:block;
+	float:left;
+	position:absolute; top:25%; left:0; z-index:7000;
+}
+
+
+/*
+-------------------------- { Navigation }
+*/
+#navigation{
+	display:block;
+	position:absolute; bottom:-5px; right:0; z-index:7000;
+}
+#navigation ul{
+}
+#navigation ul li{
+	border-bottom: 5px solid #171717;
+	display:inline; float:left;
+	margin:0 1px 0 0; padding:20px 20px 10px 10px;
+	height:50px;
+	position:relative;
+	/* CSS TRANSITION */
+	-webkit-transition-property: border;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-timing-function: linear;
+	/* CSS TRANSITION - Mozilla hack */
+	-moz-transition-property: border;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: linear;
+}
+#navigation ul li:hover{
+	border-bottom: 5px solid #27292e;
+}
+#navigation ul li a{
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+	display:inline-block;
+	/* CSS TRANSITION */
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-timing-function: linear;
+	/* CSS TRANSITION - Mozilla hack */
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.25s;
+	-moz-transition-timing-function: linear;
+}
+#navigation ul li a strong{
+	font-weight:bold;
+}
+#navigation ul li a .subline{
+	display:block;
+	clear:both;
+	color:#888888;
+	font-size:11px;
+	font-weight:normal;
+}
+
+/* 
+---------------------{ sub menu } 
+*/
+#navigation ul ul{
+	
+	display:block;
+	margin:0;
+	text-align:left;
+	width:170px;
+	position:absolute; top:85px; left:0; margin-left:0px; z-index:7000;
+}
+#navigation ul ul li{ display:block; margin:0; padding:0; position:relative; width:170px; height:auto;
+	border-bottom: 1px solid #222;}
+#navigation ul ul li:hover{ background:#181818;border-bottom: 1px solid #444;}
+#navigation ul ul a{
+	color:#ccc !important;
+	font-size:12px;
+	display:block;
+	padding:5px 8px;
+}
+#navigation ul ul a:hover{
+	color:#FFF !important;
+}
+#navigation ul ul li.current-menu-item{border-bottom: 1px solid #222;}
+
+
+/*
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- MAIN
+---------------------------------------------------------------------------------------------
+*/
+
+#main{}
+#main .content{
+	margin:0 auto;
+	width:960px;
+}
+#main .content.fullwidth{
+	
+	padding:20px 0 0 0;
+}
+
+
+#title_page{ background:#101316; border-bottom:1px solid #27292e;}
+#title_page .content{
+	padding:30px 20px 20px 20px;
+	width:920px;
+	margin:0 auto;
+	position:relative;
+}
+#title_page h2{
+	text-transform:uppercase;
+}
+#title_page p{
+	font-size:14px; line-height:23px;
+	font-weight:bold;
+	margin:0;
+	width:550px;
+}
+
+
+/*
+---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- FOOTER
+---------------------------------------------------------------------------------------------
+*/
+
+#footer{ background:#101316; border-top:1px solid #27292e;}
+#footer .content{
+	background:url(../images/main-hightlight.png) no-repeat center top;
+	font-size:11px;
+	margin:0 auto;
+	width:960px;
+	position:relative;
+}
+#footer a{ color:#888888; }
+
+
+/* 
+---------------------{ End line color } 
+*/
+#footer .start{
+	background:#27292e;
+	position:absolute;
+	top:-1px; left:0;
+	z-index:7000;
+	height:1px; width:100%;
+}
+
+
+/* 
+---------------------{ divided } 
+*/
+.divided{
+	display:block; float:left;
+	width:450px;
+	padding:20px;
+}
+.divided_right{
+	display:block; float:left;
+	width:430px;
+	padding:20px;
+	text-align:right;
+}
+
+/* 
+---------------------{ ft_menu } 
+*/
+#ft_menu li{ display: inline; margin-left:6px;}
+
+
+
+/*
+---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- DESIGN
+---------------------------------------------------------------------------------------------
+*/
+
+/* 
+---------------------{ underlined } 
+*/
+.underlined{ padding-bottom:10px;}
+.underlined span{ border-bottom:1px solid #27292e; padding-bottom:10px; margin-bottom:10px;}
+.line{border-bottom:1px solid #27292e; padding-bottom:px; margin-bottom:10px;}
+
