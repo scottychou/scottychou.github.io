@@ -1,1 +1,2 @@
-# scottychou.github.io
+# my_website
+launching an updated website

@@ -1,0 +1,27 @@
+$(document).ready(function(){
+
+  $('#about').on('click',function(){
+    $("#aboutSection").show(500);
+    $("#projectSection").hide(500);
+    $("#blogSection").hide(500);
+    $('#contactSection').hide(500);
+  })
+  $('#projects').on('click',function(){
+    $("#aboutSection").hide(500);
+    $("#projectSection").show(500);
+    $("#blogSection").hide(500);
+    $('#contactSection').hide(500);
+  })
+  $('#blog').on('click',function(){
+    $("#aboutSection").hide(500);
+    $("#projectSection").hide(500);
+    $("#blogSection").show(500);
+    $('#contactSection').hide(500);
+  })
+  $('#contact').on('click',function(){
+    $("#aboutSection").hide(500);
+    $("#projectSection").hide(500);
+    $("#blogSection").hide(500);
+    $('#contactSection').show(500);
+  })
+});
