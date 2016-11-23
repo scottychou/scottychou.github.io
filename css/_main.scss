@@ -1,51 +1,51 @@
 $headerHeight: 70px;
 $footerHeight: 42px;
 * {
-  margin:0;
+  margin: 0;
 }
 body,html{
   font-family: 'Playfair Display', sans-serif;
-  overflow:hidden;
-  height:100%;
+  overflow: hidden;
+  height: 100%;
 }
-.clearfix:after{
+.clearfix: after{
   content: "";
   display: table;
   clear: both;
 }
 #bgImage{
-  background:url("../imgs/SplitShire-min.jpg");
+  background: url("../imgs/SplitShire-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
   -webkit-filter: opacity(.8);
-  position:absolute;
+  position: absolute;
   z-index: -1;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 #myHeader {
-  width:100%;
-  height:$headerHeight;
+  width: 100%;
+  height: $headerHeight;
   min-width: 606px;
   #myLogo {
-    height:$headerHeight;
-    float:left;
-    padding-left:50px;
+    height: $headerHeight;
+    float: left;
+    padding-left: 50px;
     font-size: 3em;
-    color:white;
+    color: white;
   }
   #navbar{
-    height:$headerHeight;
-    float:right;
+    height: $headerHeight;
+    float: right;
     margin-right: 50px;
-    display:table;
+    display: table;
     ul {
       display: table-cell;
       vertical-align: middle;
       li {
-        color:white;
+        color: white;
         display: inline-block;
         padding: 2px;
         margin: 2px;
@@ -54,66 +54,61 @@ body,html{
     }
   }
 }
-
 #theContent {
   box-sizing: border-box;
   padding-top: $headerHeight;
-  height:calc(100% - #{$headerHeight} - #{$footerHeight});
+  height: calc(100% - #{$headerHeight} - #{$footerHeight});
 }
-
 #aboutSection {
   #profilePic {
-    background:url("../imgs/ProfilePic.jpg");
+    background: url("../imgs/ProfilePic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    height:100px;
-    width:100px;
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
   }
   #developer {
     text-align: center;
-    color:white;
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 1rem;
     font-family: "Open Sans Condensed";
-    padding:30px 0;
+    padding: 30px 0;
   }
   #introText{
     text-align: center;
-    color:white;
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     line-height: 2rem;
   }
 }
-
 .category-header{
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
   font-size: 3em;
-  margin:0 auto;
+  margin: 0 auto;
   padding-bottom: $headerHeight;
 }
-
 #projectSection,
 #blogSection,
 #contactSection {
-  display:none;
-  color:white;
+  display: none;
+  color: white;
   text-align: center;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
-
 #projectSection {
   overflow-y: scroll;
-  height:100%;
+  height: 100%;
   .twitch-bg {
     background-color: rgba(white,0.8);
   }
   .twitch-text-color {
-    color:#594b63;
+    color: #594b63;
     font-weight: bold;
     a {
       background-color: #594b63;
@@ -124,11 +119,11 @@ body,html{
     background-color: rgba(#31355b,0.8)
   }
   .oklunch-text-color {
-    color:#bdbdbd;
+    color: #bdbdbd;
     font-weight: bold;
     a {
       background-color: #bdbdbd;
-      color:#31355b;
+      color: #31355b;
       margin-top: 20px;
     }
   }
@@ -136,23 +131,23 @@ body,html{
     margin: 0 auto;
     padding-bottom: 20px;
     .preview-box {
-      margin:0 auto;
+      margin: 0 auto;
       padding: 20px;
-      padding-top:40px;
+      padding-top: 40px;
       text-align: center;
-      max-width:800px;
+      max-width: 800px;
       min-width: 440px;
       .project-preview {
-        display:inline;
+        display: inline;
         max-width: 100%;
-        height:auto;
+        height: auto;
         border-radius: 10px;
       }
     }
     .project-text {
-      padding:20px;
+      padding: 20px;
       padding-top: 0;
-      min-width:440px;
+      min-width: 440px;
       text-align: center;
       .project-name {
         margin: 0 auto;
@@ -172,43 +167,37 @@ body,html{
 	border-radius: 4px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }
-
-
-
-
 #myFooter {
   background-color: #c3c3c3;
-  position:absolute;
-  bottom:0;
-  right:0;
-  left:0;
-  color:black;
-  height:$footerHeight;
-  text-align:center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: black;
+  height: $footerHeight;
+  text-align: center;
   i {
-    margin-left:1em;
-    margin-right:1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
-
-
 /*underline animation*/
 .underline-animation{
-  position:relative;
+  position: relative;
 }
-.underline-animation::before, .underline-animation::after{
-  position:absolute;
-  content:"";
+.underline-animation: : before, .underline-animation: : after{
+  position: absolute;
+  content: "";
   background-color: white;
-  bottom:-3px;
-  height:3px;
+  bottom: -3px;
+  height: 3px;
   transition: all .3s linear;
-  right:50%;
-  left:50%;
+  right: 50%;
+  left: 50%;
 }
-.underline-animation:hover::after{
-  right:0%;
+.underline-animation: hover: : after{
+  right: 0%;
 }
-.underline-animation:hover::before{
-  left:0%;
+.underline-animation: hover: : before{
+  left: 0%;
 }
